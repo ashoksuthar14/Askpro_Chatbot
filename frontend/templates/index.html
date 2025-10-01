@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AskMe Pro</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+	<header class="topbar glass">
+		<div class="brand">
+			<div class="logo">🤖</div>
+			<h1>AskMe Pro</h1>
+		</div>
+		<div class="controls">
+			<label class="select"><span>Persona</span>
+				<select id="persona">
+					<option value="auto">auto</option>
+					<option value="teacher">teacher</option>
+					<option value="coder">coder</option>
+					<option value="comedian">comedian</option>
+					<option value="coach">coach</option>
+				</select>
+			</label>
+			<label class="select"><span>Mode</span>
+				<select id="mode">
+					<option value="short">short</option>
+					<option value="detailed">detailed</option>
+					<option value="el5">el5</option>
+					<option value="deep_dive">deep_dive</option>
+				</select>
+			</label>
+			<button id="micBtn" class="btn icon" title="Voice"><span class="pulse"></span>🎤</button>
+		</div>
+	</header>
+	<main class="layout layout-chat">
+		<section class="chat card">
+			<div id="chatLog" class="chat-log"></div>
+			<div class="composer">
+				<input id="question" class="input" placeholder="Ask a question...">
+				<button id="sendBtn" class="btn primary">Send</button>
+			</div>
+		</section>
+		<aside class="sidebar card">
+			<h3>Knowledge</h3>
+			<div class="uploader modern" id="uploader">
+				<div class="drop">
+					<div class="icon">📄</div>
+					<div class="text">
+						<strong>Drop .txt or .pdf here</strong>
+						<span>or</span>
+					</div>
+					<label class="file-btn">
+						<input type="file" id="fileInput" accept=".txt,.pdf">
+						Choose File
+					</label>
+				</div>
+				<button id="uploadBtn" class="btn full">Upload</button>
+			</div>
+			<ul id="docs" class="list"></ul>
+			<h3>Article</h3>
+			<textarea id="article" class="area" placeholder="Paste article text here..."></textarea>
+			<button id="summarizeBtn" class="btn">Summarize</button>
+		</aside>
+	</main>
+	<footer class="footer">
+		<span>Powered by Gemini 2.5 Flash</span>
+	</footer>
+	<script src="/static/app.js"></script>
+</body>
+</html>
