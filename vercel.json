@@ -1,18 +1,8 @@
 {
-	"version": 2,
-	"env": {
-		"FAST_MODE": "1",
-		"MAX_OUTPUT_TOKENS": "500",
-		"TEMPERATURE": "0.1"
-	},
 	"builds": [
-		{ "src": "backend/app.py", "use": "@vercel/python" },
-		{ "src": "frontend/static/(.*)", "use": "@vercel/static" },
-		{ "src": "frontend/templates/(.*)", "use": "@vercel/static" }
+		{ "src": "backend/app.py", "use": "@vercel/python" }
 	],
 	"routes": [
-		{ "src": "/api/(.*)", "dest": "backend/app.py" },
-		{ "src": "/static/(.*)", "dest": "frontend/static/$1" },
-		{ "src": "/", "dest": "backend/app.py" }
+		{ "src": "/(.*)", "dest": "/backend/app.py" }
 	]
 }
