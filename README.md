@@ -12,7 +12,7 @@ The platform combines **advanced AI with an intuitive frontend** to deliver a pr
 
 ---
 
-<img src="images/chat_ui.png" alt="AskMe Pro Chat Interface" />  
+<img src="images/home page.png" alt="AskMe Pro Chat Interface" />  
 
 ---
 
@@ -24,7 +24,7 @@ The platform combines **advanced AI with an intuitive frontend** to deliver a pr
 - Personas: **teacher, coder, comedian, coach, auto-detect**  
 - Context-aware answers with conversation memory  
 
-<img src="images/chat_modes.png" alt="Chat Modes and Personas" />  
+<img src="images/persona.png" alt="Chat Modes and Personas" />  
 
 ---
 
@@ -34,7 +34,7 @@ The platform combines **advanced AI with an intuitive frontend** to deliver a pr
 - Indexed using **TF-IDF retrieval** (no external embeddings)  
 - Context chunks are used in answers for grounded responses  
 
-<img src="images/doc_upload.png" alt="Document Upload Interface" />  
+<img src="images/upload document.png" alt="Document Upload Interface" />  
 
 ---
 
@@ -43,7 +43,7 @@ The platform combines **advanced AI with an intuitive frontend** to deliver a pr
 - Summarizes any article/document into **exactly 3 bullet points**  
 - Outputs clean, concise summaries with HTML-styled cards  
 
-<img src="images/summary.png" alt="3-Point Summarization" />  
+<img src="images/summarization.png" alt="3-Point Summarization" />  
 
 ---
 
@@ -85,7 +85,7 @@ The platform combines **advanced AI with an intuitive frontend** to deliver a pr
 - Voice input with **Web Speech API** (input only)  
 - Styled with **glassmorphic theme**  
 
-<img src="images/frontend.png" alt="Frontend UI" />  
+
 
 ---
 
@@ -122,3 +122,4 @@ gunicorn app:app --chdir backend --bind 0.0.0.0:5000
 ```
 
 3. Open http://localhost:5000
+
