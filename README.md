@@ -106,3 +106,19 @@ The platform combines **advanced AI with an intuitive frontend** to deliver a pr
    ```bash
    git clone https://github.com/your-username/askme-pro.git
    cd askme-pro
+
+
+## Quickstart
+1. Create `.env` from example and set `GEMINI_API_KEY`.
+```bash
+cp .env.example .env
+```
+2. Install dependencies and run server
+```bash
+python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+cd backend
+gunicorn app:app --chdir backend --bind 0.0.0.0:5000
+```
+
+3. Open http://localhost:5000
